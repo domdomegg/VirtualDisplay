@@ -1,6 +1,6 @@
-# VirtualDisplay
+# displayoverride-mac
 
-A macOS menu bar app to force specific screen resolutions on your Mac.
+A macOS menu bar app to force specific screen resolutions.
 
 ## Why?
 
@@ -19,25 +19,25 @@ macOS doesn't natively support setting arbitrary resolutions on built-in display
 
 ```bash
 # Clone the repo
-git clone git@github.com:domdomegg/VirtualDisplay.git
-cd VirtualDisplay
+git clone git@github.com:domdomegg/displayoverride-mac.git
+cd displayoverride-mac
 
 # Build
-swiftc -O -o VirtualDisplay VirtualDisplay.swift
+swiftc -O -o displayoverride DisplayOverride.swift
 
 # Run
-./VirtualDisplay
+./displayoverride
 ```
 
-Or download a pre-built binary from the [Releases](https://github.com/domdomegg/VirtualDisplay/releases) page.
+Or download a pre-built binary from the [Releases](https://github.com/domdomegg/displayoverride-mac/releases) page.
 
 ## Usage
 
-1. Launch the app - a 📺 icon appears in your menu bar
+1. Launch the app - a 🖥️ icon appears in your menu bar
 2. Click and select a resolution (4K, 1080p, or 720p)
 3. The virtual display appears in System Settings > Displays
 4. Arrange it as needed, or mirror your main display to it
-5. Click "Disable" to remove the virtual display (restarts the app)
+5. Click "Disable" to remove the virtual display
 
 ## How it works
 

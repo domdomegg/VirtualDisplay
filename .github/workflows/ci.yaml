@@ -10,13 +10,13 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Build
-        run: swiftc -O -o VirtualDisplay VirtualDisplay.swift
+        run: swiftc -O -o displayoverride DisplayOverride.swift
 
       - name: Verify binary
-        run: test -x VirtualDisplay && file VirtualDisplay
+        run: test -x displayoverride && file displayoverride
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: VirtualDisplay
-          path: VirtualDisplay
+          name: displayoverride
+          path: displayoverride

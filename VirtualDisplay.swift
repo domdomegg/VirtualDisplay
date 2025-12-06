@@ -28,7 +28,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     private func setupStatusItem() {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        statusItem.button?.title = "📺"
+        statusItem.button?.title = "🖥️"
 
         let menu = NSMenu()
 
@@ -78,7 +78,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if VirtualDisplayManager.shared.createDisplay(width: res.width, height: res.height, name: "Virtual \(key) Display") {
             currentResolution = key
             updateMenuState()
-            statusItem.button?.title = "🖥️"
         }
     }
 

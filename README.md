@@ -2,6 +2,8 @@
 
 A macOS menu bar app to force specific screen resolutions.
 
+![Screenshot](screenshot.png)
+
 ## Why?
 
 Modern Macs have non-standard display resolutions (e.g. 3024×1964 on a MacBook Pro 16"). This can be problematic for AI computer use models like Claude, which are typically trained on standard resolutions like 1920×1080.

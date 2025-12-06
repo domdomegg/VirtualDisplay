@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build
+        run: swiftc -O -o VirtualDisplay VirtualDisplay.swift
+
+      - name: Verify binary
+        run: test -x VirtualDisplay && file VirtualDisplay

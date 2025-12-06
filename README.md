@@ -45,10 +45,5 @@ Uses the private `CGVirtualDisplay` API from CoreGraphics to create virtual disp
 
 ## Limitations
 
-- Disabling a display requires restarting the app (the CGVirtualDisplay API doesn't cleanly support destroying displays)
 - Uses undocumented Apple APIs which could break in future macOS versions
 - Only tested on Apple Silicon Macs
-
-## License
-
-MIT
